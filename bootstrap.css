@@ -32,12 +32,6 @@ a {
 }
 
 
-.navbar {
-    z-index: 1
-    ;
-}
-
-
 .img1 {
     background-image: url(https://www.w3schools.com/w3images/parallax1.jpg);
     height: 100dvh;
@@ -48,6 +42,7 @@ a {
 }
 .img3 {
     background-image: url(https://www.w3schools.com/w3images/parallax3.jpg);
+    height: 45dvh
 }
 .img1, .img2, .img3 {
     background-attachment: fixed;
@@ -55,6 +50,29 @@ a {
     background-size: cover;
     background-position: center;
 }
+
+
+/* navbar */
+
+/* @keyframes animatetop {
+    0% {
+        top: -300px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+.navbartop {
+    animation: animatetop 0.4s;
+} */
+
+.navbar {
+    z-index: 10;
+}
+
+/* hero */
 .section-hero {
     top: 50%;
     left: 50%;
@@ -62,7 +80,6 @@ a {
     color: white;
     background-color: var(--my-bg-logo);
 }
-
 
 /* about */
 .article {
@@ -94,9 +111,26 @@ a {
 .col-3 p {
     color: var(--my-white);
 }
-.section-port {
+.section-port, .section-contact {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
+}
+.btn {
+    background-color: var(--my-color-button);
+    color: var(--my-grey);
+    border-radius: 0%;
+}
+
+/* contact */
+.form {
+    border: 1px solid var(--my-grey);
+}
+
+/* footer */
+
+.bg-custom {
+    height: 30dvh;
+    background-color: black;
 }
