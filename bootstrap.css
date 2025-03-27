@@ -1,0 +1,102 @@
+:root {
+    --my-grey: #616161;
+    --my-white: #ffff;
+    --my-bg-logo: #404040;
+    --my-color-button: #cccc;
+
+    --my-font: "lato";
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: var(--my-font);
+    color: var(--my-grey);
+}
+
+p, 
+div, 
+a {
+    font-family: var(--my-font);
+    color: var(--my-grey);
+}
+
+.title-font {
+    font-family: var(--my-font);
+}
+.description-font {
+    font-family: var(--my-font);
+}
+
+
+.navbar {
+    z-index: 1
+    ;
+}
+
+
+.img1 {
+    background-image: url(https://www.w3schools.com/w3images/parallax1.jpg);
+    height: 100dvh;
+}
+.img2 {
+    background-image: url(https://www.w3schools.com/w3images/parallax2.jpg);
+    height: 45dvh;
+}
+.img3 {
+    background-image: url(https://www.w3schools.com/w3images/parallax3.jpg);
+}
+.img1, .img2, .img3 {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-hero {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    background-color: var(--my-bg-logo);
+}
+
+
+/* about */
+.article {
+    height: fit-content;
+}
+.cont-0 {
+    background-color: var(--my-color-button);
+}
+.cont-1 {
+    background-color: var(--my-bg-logo);
+    color: var(--my-white);
+    margin-right: 10%;
+}
+.cont-2 {
+    background-color: var(--my-bg-logo);
+    color: var(--my-white);
+    margin-right: 15%;
+}
+.cont-3 {
+    background-color: var(--my-bg-logo);
+    color: var(--my-white);
+    margin-right: 25%;
+}
+
+/* portfolio */
+.port  {
+    background-color: var(--my-bg-logo);
+}
+.col-3 p {
+    color: var(--my-white);
+}
+.section-port {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
